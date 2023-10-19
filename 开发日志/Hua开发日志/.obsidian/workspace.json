@@ -11,8 +11,12 @@
             "id": "477c7dd764cf2824",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "0.项目简介/简单介绍.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -65,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "ca773c0a15596c0f",
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "0.项目简介/简单介绍.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "0.项目简介/简单介绍.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "0.项目简介/简单介绍.md"
+              }
             }
           }
         ]
@@ -139,5 +147,13 @@
     }
   },
   "active": "477c7dd764cf2824",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "1.V0.1_server与链接模块/1_1.server模块开发.md",
+    "1.V0.1_server与链接模块/1_2.基本server模块的启动.md",
+    "0.项目简介/简单介绍.md",
+    "1.V0.1_server与链接模块",
+    "2023-10-19.md",
+    "0.项目简介",
+    "未命名.md"
+  ]
 }
