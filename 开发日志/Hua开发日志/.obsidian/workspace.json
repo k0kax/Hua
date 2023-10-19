@@ -13,13 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0.项目简介/简单介绍.md",
+                "file": "1.V0.1_server与链接模块/1_2.基本server模块的启动.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9a17c622adf0cacf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "查漏补缺/1.&的应用.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "963d76b54420c088",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "查漏补缺/3.socket连接.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -85,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "0.项目简介/简单介绍.md",
+                "file": "查漏补缺/3.socket连接.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "0.项目简介/简单介绍.md",
+                "file": "查漏补缺/3.socket连接.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "0.项目简介/简单介绍.md"
+                "file": "查漏补缺/3.socket连接.md"
               }
             }
           }
@@ -146,11 +171,15 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "477c7dd764cf2824",
+  "active": "963d76b54420c088",
   "lastOpenFiles": [
-    "1.V0.1_server与链接模块/1_1.server模块开发.md",
+    "查漏补缺/2.结构体与方法.md",
+    "查漏补缺/3.socket连接.md",
     "1.V0.1_server与链接模块/1_2.基本server模块的启动.md",
+    "1.V0.1_server与链接模块/1_1.server模块开发.md",
+    "查漏补缺/1.&的应用.md",
     "0.项目简介/简单介绍.md",
+    "查漏补缺",
     "1.V0.1_server与链接模块",
     "2023-10-19.md",
     "0.项目简介",

@@ -4,17 +4,17 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="defe1831-467e-4b59-a9c3-8a5a0efe08a3" name="Changes" comment="添加仓库的使用">
-      <change afterPath="$PROJECT_DIR$/hiface/iserver.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hnet/server.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/开发图片/Hua框架结构图.drawio" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/开发图片/Snipaste_2023-10-19_19-57-37.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/0.项目简介/简单介绍.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/1.V0.1_server与链接模块/1_1.server模块开发.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/1.V0.1_server与链接模块/1_2.基本server模块的启动.md" afterDir="false" />
+    <list default="true" id="defe1831-467e-4b59-a9c3-8a5a0efe08a3" name="Changes" comment="server模块">
+      <change afterPath="$PROJECT_DIR$/myDemo/Hua_V0.1/Server.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/开发图片/.$Hua框架结构图.drawio.bkp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/查漏补缺/1.&amp;的应用.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/查漏补缺/2.结构体与方法.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hnet/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/hnet/server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/开发图片/Hua框架结构图.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/开发图片/Hua框架结构图.drawio" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/开发日志/Hua开发日志/.obsidian/workspace.json" beforeDir="false" afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/.obsidian/workspace.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/开发日志/Hua开发日志/1.V0.1_server与链接模块/1_1.server模块开发.md" beforeDir="false" afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/1.V0.1_server与链接模块/1_1.server模块开发.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/开发日志/Hua开发日志/1.V0.1_server与链接模块/1_2.基本server模块的启动.md" beforeDir="false" afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/1.V0.1_server与链接模块/1_2.基本server模块的启动.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +56,8 @@
     "go.import.settings.migrated": "true",
     "last_opened_file_path": "C:/Users/Z1306",
     "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)"
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -77,7 +78,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="添加仓库的使用" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加仓库的使用" />
+    <MESSAGE value="server模块" />
+    <option name="LAST_COMMIT_MESSAGE" value="server模块" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
