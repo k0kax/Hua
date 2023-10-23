@@ -4,17 +4,16 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="defe1831-467e-4b59-a9c3-8a5a0efe08a3" name="Changes" comment="server模块">
-      <change afterPath="$PROJECT_DIR$/myDemo/Hua_V0.1/Server.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/开发图片/.$Hua框架结构图.drawio.bkp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/查漏补缺/1.&amp;的应用.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/查漏补缺/2.结构体与方法.md" afterDir="false" />
+    <list default="true" id="defe1831-467e-4b59-a9c3-8a5a0efe08a3" name="Changes" comment="V0.1">
+      <change afterPath="$PROJECT_DIR$/myDemo/Hua_V0.1/Client.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/.obsidian/graph.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/1.V0.1_server与链接模块/1_3.服务端应用.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hnet/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/hnet/server.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/开发图片/Hua框架结构图.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/开发图片/Hua框架结构图.drawio" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/开发日志/Hua开发日志/.obsidian/appearance.json" beforeDir="false" afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/.obsidian/appearance.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/开发日志/Hua开发日志/.obsidian/workspace.json" beforeDir="false" afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/.obsidian/workspace.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/开发日志/Hua开发日志/1.V0.1_server与链接模块/1_1.server模块开发.md" beforeDir="false" afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/1.V0.1_server与链接模块/1_1.server模块开发.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/开发日志/Hua开发日志/1.V0.1_server与链接模块/1_2.基本server模块的启动.md" beforeDir="false" afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/1.V0.1_server与链接模块/1_2.基本server模块的启动.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/开发日志/Hua开发日志/查漏补缺/3.socket连接.md" beforeDir="false" afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/查漏补缺/3.socket连接.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,23 +42,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultGoTemplateProperty": "Go File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "go.import.settings.migrated": "true",
-    "last_opened_file_path": "C:/Users/Z1306",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Z1306&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager" selected="Go Build.go build Hua/myDemo/Hua_V0.1">
+    <configuration name="go build Hua/myDemo/Hua_V0.1" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Hua" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="Hua/myDemo/Hua_V0.1" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/myDemo/Hua_V0.1/Server.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build server.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Hua" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <package value="Hua" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/hnet/server.go" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build Hua/myDemo/Hua_V0.1" />
+        <item itemvalue="Go Build.go build server.go" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
@@ -79,7 +104,9 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="添加仓库的使用" />
     <MESSAGE value="server模块" />
-    <option name="LAST_COMMIT_MESSAGE" value="server模块" />
+    <MESSAGE value="socket" />
+    <MESSAGE value="V0.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="V0.1" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
