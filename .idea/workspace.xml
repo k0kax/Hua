@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="defe1831-467e-4b59-a9c3-8a5a0efe08a3" name="Changes" comment="V0.1">
-      <change afterPath="$PROJECT_DIR$/myDemo/Hua_V0.1/Client.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/.obsidian/graph.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/1.V0.1_server与链接模块/1_3.服务端应用.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hnet/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/hnet/server.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/开发日志/Hua开发日志/.obsidian/appearance.json" beforeDir="false" afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/.obsidian/appearance.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/开发日志/Hua开发日志/.obsidian/workspace.json" beforeDir="false" afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/.obsidian/workspace.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/开发日志/Hua开发日志/1.V0.1_server与链接模块/1_2.基本server模块的启动.md" beforeDir="false" afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/1.V0.1_server与链接模块/1_2.基本server模块的启动.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/开发日志/Hua开发日志/查漏补缺/3.socket连接.md" beforeDir="false" afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/查漏补缺/3.socket连接.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/开发日志/Hua开发日志/1.V0.1_server与链接模块/1_3.服务端应用.md" beforeDir="false" afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/1.V0.1_server与链接模块/1_3.服务端应用.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
