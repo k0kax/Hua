@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="defe1831-467e-4b59-a9c3-8a5a0efe08a3" name="Changes" comment="V0.1">
+      <change afterPath="$PROJECT_DIR$/hiface/iconnection.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hnet/connection.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myDemo/Hua_V0.2/Client.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myDemo/Hua_V0.2/Server.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/2.V0.2链接的封装/2_1链接模块的封装.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/2.V0.2链接的封装/2_2具体方法的实现.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/2.V0.2链接的封装/2_3.connection与server相连.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hnet/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/hnet/server.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/开发日志/Hua开发日志/.obsidian/workspace.json" beforeDir="false" afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/.obsidian/workspace.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/开发日志/Hua开发日志/1.V0.1_server与链接模块/1_3.服务端应用.md" beforeDir="false" afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/1.V0.1_server与链接模块/1_3.服务端应用.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,24 +43,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Z1306&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultGoTemplateProperty": "Go File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "E:/Code/go/Hua/myDemo/Hua_V0.2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
   }
-}</component>
-  <component name="RunManager" selected="Go Build.go build Hua/myDemo/Hua_V0.1">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Code\go\Hua\myDemo\Hua_V0.2" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Build.go build oldman.go">
     <configuration name="go build Hua/myDemo/Hua_V0.1" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Hua" />
       <working_directory value="$PROJECT_DIR$" />
@@ -60,6 +73,15 @@
       <package value="Hua/myDemo/Hua_V0.1" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/myDemo/Hua_V0.1/Server.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build oldman.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Hua" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <package value="Hua" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/myDemo/Hua_V0.1/oldman.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build server.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -73,6 +95,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build oldman.go" />
         <item itemvalue="Go Build.go build Hua/myDemo/Hua_V0.1" />
         <item itemvalue="Go Build.go build server.go" />
       </list>

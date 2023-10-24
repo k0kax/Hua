@@ -2,6 +2,7 @@ package hnet
 
 import (
 	"Hua/hiface"
+	"errors"
 	"fmt"
 	"net"
 )
@@ -18,10 +19,21 @@ type Server struct {
 	Port int
 }
 
+// 一个回显业务 自定义的handleapi
+func CallBackToClient(conn *net.TCPConn, data []byte, cnt int) error {
+	fmt.Println("[Conn Handle]CallbackToClient...")
+	if _, err := conn.Write(data[:cnt]); err != nil {
+		fmt.Println("write back buf err", err)
+		return errors.New("CallBackToClient error")
+	}
+
+	return nil
+}
+
 // 启动服务器
 func (s *Server) Start() {
 	//0.日志记录
-	fmt.Println("[Start] Server  Listenner at IP:%s,port:%d is starting!!!\n", s.IP, s.Port)
+	fmt.Printf("[Start] Server  Listenner at IP:%s,port:%d is starting!!!\n", s.IP, s.Port)
 	go func() {
 		//1.获取一个TCP的Addr句柄 更像是，重新设置以下本地监听的信息
 		addr, err := net.ResolveTCPAddr(s.IPversion, fmt.Sprintf("%s:%d", s.IP, s.Port))
@@ -38,6 +50,9 @@ func (s *Server) Start() {
 		}
 		fmt.Println("Start Hua Server succ name:", s.Name, "succ,Listerning....")
 
+		var cid uint32
+		cid = 0 //链接id
+
 		//3.阻塞的等待客户端连接，处理客户端业务（读写）
 		for {
 			//如果有客户连接进来，阻塞会返回
@@ -47,22 +62,11 @@ func (s *Server) Start() {
 				continue //继续执行
 			}
 
-			//客户端已经建立连接，做一些业务，此处做一个最大512字节回显业务
-			go func() {
-				for {
-					buf := make([]byte, 512)   //用一个切片承接读取的内容，最大512字节
-					cnt, err := conn.Read(buf) //cnt 是 Read 方法的返回值，表示成功读取的字节数。
-					if err != nil {
-						fmt.Println("recv buf err:", err)
-					}
+			delConn := NewConnection(conn, cid, CallBackToClient)
+			cid++
 
-					fmt.Printf("recv Client buf: %s,cnt: %d\n", string(buf), cnt)
-					//回显功能
-					if _, err := conn.Write(buf[:cnt]); err != nil {
-						fmt.Println("write back buf err")
-					}
-				}
-			}()
+			//启动当前的链接业务处理
+			go delConn.Start()
 		}
 	}()
 }
