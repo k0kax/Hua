@@ -14,7 +14,7 @@ type IConnection interface {
 	Stop()
 
 	//获取当前连接绑定的socket conn
-	GetTCPConnection() *net.Conn
+	GetTCPConnection() *net.TCPConn
 
 	//获取当前连接的ID
 	GetConnID() uint32

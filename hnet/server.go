@@ -2,7 +2,6 @@ package hnet
 
 import (
 	"Hua/hiface"
-	"errors"
 	"fmt"
 	"net"
 )
@@ -17,17 +16,9 @@ type Server struct {
 	IP string
 	//服务器监听的端口
 	Port int
-}
 
-// 一个回显业务 自定义的handleapi
-func CallBackToClient(conn *net.TCPConn, data []byte, cnt int) error {
-	fmt.Println("[Conn Handle]CallbackToClient...")
-	if _, err := conn.Write(data[:cnt]); err != nil {
-		fmt.Println("write back buf err", err)
-		return errors.New("CallBackToClient error")
-	}
-
-	return nil
+	//当前的server添加router，server注册的链接对应的处理业务
+	Router hiface.IRouter
 }
 
 // 启动服务器
@@ -62,7 +53,7 @@ func (s *Server) Start() {
 				continue //继续执行
 			}
 
-			delConn := NewConnection(conn, cid, CallBackToClient)
+			delConn := NewConnection(conn, cid, s.Router)
 			cid++
 
 			//启动当前的链接业务处理
@@ -85,6 +76,11 @@ func (s *Server) Stop() {
 	//todo 停止服务器的其他业务
 }
 
+func (s *Server) AddRouter(router hiface.IRouter) {
+	s.Router = router
+	fmt.Println("Add router Succ!!")
+}
+
 // 初始化服务器模块
 func NewServer(name string) hiface.IServer {
 
@@ -93,6 +89,7 @@ func NewServer(name string) hiface.IServer {
 		IPversion: "tcp4",
 		IP:        "127.0.0.1",
 		Port:      8999,
+		Router:    nil,
 	}
 	return s
 }
