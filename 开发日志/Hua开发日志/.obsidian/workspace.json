@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3.v0.3router路由模块/3_4.测试实现.md",
+                "file": "4.v0.4全局配置/4_1添加全局配置模块.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3.v0.3router路由模块/3_4.测试实现.md",
+                "file": "4.v0.4全局配置/4_1添加全局配置模块.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3.v0.3router路由模块/3_4.测试实现.md",
+                "file": "4.v0.4全局配置/4_1添加全局配置模块.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3.v0.3router路由模块/3_4.测试实现.md"
+                "file": "4.v0.4全局配置/4_1添加全局配置模块.md"
               }
             }
           }
@@ -148,8 +148,10 @@
   },
   "active": "a66b24fde26ebd04",
   "lastOpenFiles": [
-    "3.v0.3router路由模块/3_3.集成到框架当中.md",
     "3.v0.3router路由模块/3_4.测试实现.md",
+    "4.v0.4全局配置/4_1添加全局配置模块.md",
+    "4.v0.4全局配置",
+    "3.v0.3router路由模块/3_3.集成到框架当中.md",
     "3.v0.3router路由模块/3_2.Router路由模块的实现.md",
     "3.v0.3router路由模块/3_1.Request请求模块封装.md",
     "2.V0.2链接的封装/2_3.connection与server相连.md",

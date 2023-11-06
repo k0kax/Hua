@@ -2,6 +2,7 @@ package hnet
 
 import (
 	"Hua/hiface"
+	"Hua/utils"
 	"fmt"
 	"net"
 )
@@ -24,6 +25,7 @@ type Server struct {
 // 启动服务器
 func (s *Server) Start() {
 	//0.日志记录
+	fmt.Printf("[Hua] Server Name:%s,Listenner at IP:%s,port:%d is starting\n", utils.GlobalObject.Name, utils.GlobalObject.Host, utils.GlobalObject.TcpPort)
 	fmt.Printf("[Start] Server  Listenner at IP:%s,port:%d is starting!!!\n", s.IP, s.Port)
 	go func() {
 		//1.获取一个TCP的Addr句柄 更像是，重新设置以下本地监听的信息
@@ -85,10 +87,10 @@ func (s *Server) AddRouter(router hiface.IRouter) {
 func NewServer(name string) hiface.IServer {
 
 	s := &Server{
-		Name:      name,
+		Name:      utils.GlobalObject.Name,
 		IPversion: "tcp4",
-		IP:        "127.0.0.1",
-		Port:      8999,
+		IP:        utils.GlobalObject.Host,
+		Port:      utils.GlobalObject.TcpPort,
 		Router:    nil,
 	}
 	return s

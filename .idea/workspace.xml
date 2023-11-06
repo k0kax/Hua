@@ -5,23 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="defe1831-467e-4b59-a9c3-8a5a0efe08a3" name="Changes" comment="V0.1">
-      <change afterPath="$PROJECT_DIR$/hiface/irequest.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hiface/itouter.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hnet/request.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hnet/router.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myDemo/Hua_V0.3/Client.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myDemo/Hua_V0.3/Server.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/3.v0.3router路由模块/3_1.Request请求模块封装.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/3.v0.3router路由模块/3_2.Router路由模块的实现.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/3.v0.3router路由模块/3_3.集成到框架当中.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/3.v0.3router路由模块/3_4.测试实现.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myDemo/Hua_V0.4/Client.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myDemo/Hua_V0.4/Server.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myDemo/Hua_V0.4/conf/hua.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/globalobj.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/4.v0.4全局配置/4_1添加全局配置模块.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hiface/iconnection.go" beforeDir="false" afterPath="$PROJECT_DIR$/hiface/iconnection.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hiface/iserver.go" beforeDir="false" afterPath="$PROJECT_DIR$/hiface/iserver.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hnet/connection.go" beforeDir="false" afterPath="$PROJECT_DIR$/hnet/connection.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hnet/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/hnet/server.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/开发日志/Hua开发日志/.obsidian/workspace.json" beforeDir="false" afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/.obsidian/workspace.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/开发日志/Hua开发日志/2.V0.2链接的封装/2_1链接模块的封装.md" beforeDir="false" afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/2.V0.2链接的封装/2_1链接模块的封装.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Go File" />
+        <option value="tsconfig.json" />
       </list>
     </option>
   </component>
@@ -61,7 +53,7 @@
     "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
     "WebServerToolWindowFactoryState": "false",
     "go.import.settings.migrated": "true",
-    "last_opened_file_path": "E:/Code/go/Hua/myDemo/Hua_V0.3",
+    "last_opened_file_path": "E:/Code/go/Hua/myDemo/Hua_V0.4",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -70,11 +62,12 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Code\go\Hua\myDemo\Hua_V0.4" />
       <recent name="E:\Code\go\Hua\myDemo\Hua_V0.3" />
       <recent name="E:\Code\go\Hua\myDemo\Hua_V0.2" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build oldman.go">
+  <component name="RunManager" selected="Go Build.go build server.go">
     <configuration name="go build Hua/myDemo/Hua_V0.1" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Hua" />
       <working_directory value="$PROJECT_DIR$" />
