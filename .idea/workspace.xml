@@ -5,14 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="defe1831-467e-4b59-a9c3-8a5a0efe08a3" name="Changes" comment="V0.1">
-      <change afterPath="$PROJECT_DIR$/myDemo/Hua_V0.4/Client.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myDemo/Hua_V0.4/Server.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myDemo/Hua_V0.4/conf/hua.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/globalobj.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/4.v0.4全局配置/4_1添加全局配置模块.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hiface/idatapack.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hiface/imessage.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hnet/datapack.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hnet/datapack_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hnet/message.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myDemo/Hua_V0.5/Client.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myDemo/Hua_V0.5/Server.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myDemo/Hua_V0.5/conf/hua.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/data.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/ioReadFull.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/开发图片/.$Tcp粘包问题.drawio.bkp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/开发图片/Tcp粘包问题.drawio" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/开发图片/未命名绘图.drawio" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/5.v0.5Message消息模块/5_1 Message消息模块的定义与实现.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/5.v0.5Message消息模块/5_2 TCP粘包问题.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/5.v0.5Message消息模块/5_3 封包拆包.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/5.v0.5Message消息模块/5_4 集成到框架中.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/5.v0.5Message消息模块/5_5 模拟测试.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/查漏补缺/4.go_test模块.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/查漏补缺/5.断言.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/查漏补缺/6.Io.ReadFull方法.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/查漏补缺/7.大端序与小端序.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hnet/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/hnet/server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hiface/iconnection.go" beforeDir="false" afterPath="$PROJECT_DIR$/hiface/iconnection.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hiface/irequest.go" beforeDir="false" afterPath="$PROJECT_DIR$/hiface/irequest.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hnet/connection.go" beforeDir="false" afterPath="$PROJECT_DIR$/hnet/connection.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hnet/request.go" beforeDir="false" afterPath="$PROJECT_DIR$/hnet/request.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/开发日志/Hua开发日志/.obsidian/graph.json" beforeDir="false" afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/.obsidian/graph.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/开发日志/Hua开发日志/.obsidian/workspace.json" beforeDir="false" afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/.obsidian/workspace.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/开发日志/Hua开发日志/3.v0.3router路由模块/3_1.Request请求模块封装.md" beforeDir="false" afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/3.v0.3router路由模块/3_1.Request请求模块封装.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/开发日志/Hua开发日志/3.v0.3router路由模块/3_4.测试实现.md" beforeDir="false" afterPath="$PROJECT_DIR$/开发日志/Hua开发日志/3.v0.3router路由模块/3_4.测试实现.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +45,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Go File" />
         <option value="tsconfig.json" />
+        <option value="Go File" />
       </list>
     </option>
   </component>
@@ -53,7 +76,7 @@
     "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
     "WebServerToolWindowFactoryState": "false",
     "go.import.settings.migrated": "true",
-    "last_opened_file_path": "E:/Code/go/Hua/myDemo/Hua_V0.4",
+    "last_opened_file_path": "E:/Code/go/Hua/myDemo/Hua_V0.5",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -62,12 +85,13 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Code\go\Hua\myDemo\Hua_V0.5" />
       <recent name="E:\Code\go\Hua\myDemo\Hua_V0.4" />
       <recent name="E:\Code\go\Hua\myDemo\Hua_V0.3" />
       <recent name="E:\Code\go\Hua\myDemo\Hua_V0.2" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build server.go">
+  <component name="RunManager" selected="Go Build.go build Hua/test">
     <configuration name="go build Hua/myDemo/Hua_V0.1" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Hua" />
       <working_directory value="$PROJECT_DIR$" />
@@ -75,6 +99,15 @@
       <package value="Hua/myDemo/Hua_V0.1" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/myDemo/Hua_V0.1/Server.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build Hua/test" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Hua" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="Hua/test" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/test/ioReadFull.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build oldman.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -86,20 +119,37 @@
       <filePath value="$PROJECT_DIR$/myDemo/Hua_V0.1/oldman.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build server.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="TestDataPack in Hua/hnet (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="Hua" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <package value="Hua" />
+      <working_directory value="$PROJECT_DIR$/hnet" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="Hua/hnet" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/hnet/server.go" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestDataPack\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestDataPack in Hua/hnet" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Hua" />
+      <working_directory value="$PROJECT_DIR$/hnet" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="Hua/hnet" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestDataPack\E$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build Hua/test" />
+        <item itemvalue="Go Test.TestDataPack in Hua/hnet (1)" />
+        <item itemvalue="Go Test.TestDataPack in Hua/hnet" />
         <item itemvalue="Go Build.go build oldman.go" />
         <item itemvalue="Go Build.go build Hua/myDemo/Hua_V0.1" />
-        <item itemvalue="Go Build.go build server.go" />
       </list>
     </recent_temporary>
   </component>
@@ -112,7 +162,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "cfd88c28eb638367",
+        "id": "69cf3223f5b7dbfc",
         "type": "tabs",
         "children": [
           {
-            "id": "a66b24fde26ebd04",
+            "id": "7057340dba0948c5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4.v0.4全局配置/4_1添加全局配置模块.md",
+                "file": "5.v0.5Message消息模块/5_5 模拟测试.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4.v0.4全局配置/4_1添加全局配置模块.md",
+                "file": "5.v0.5Message消息模块/5_5 模拟测试.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4.v0.4全局配置/4_1添加全局配置模块.md",
+                "file": "5.v0.5Message消息模块/5_5 模拟测试.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4.v0.4全局配置/4_1添加全局配置模块.md"
+                "file": "5.v0.5Message消息模块/5_5 模拟测试.md"
               }
             }
           }
@@ -146,23 +146,33 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "a66b24fde26ebd04",
+  "active": "7057340dba0948c5",
   "lastOpenFiles": [
     "3.v0.3router路由模块/3_4.测试实现.md",
-    "4.v0.4全局配置/4_1添加全局配置模块.md",
-    "4.v0.4全局配置",
-    "3.v0.3router路由模块/3_3.集成到框架当中.md",
-    "3.v0.3router路由模块/3_2.Router路由模块的实现.md",
-    "3.v0.3router路由模块/3_1.Request请求模块封装.md",
+    "5.v0.5Message消息模块/5_5 模拟测试.md",
+    "5.v0.5Message消息模块/5_3 封包拆包.md",
+    "5.v0.5Message消息模块/5_4 集成到框架中.md",
     "2.V0.2链接的封装/2_3.connection与server相连.md",
+    "4.v0.4全局配置/4_1添加全局配置模块.md",
+    "5.v0.5Message消息模块/5_1 Message消息模块的定义与实现.md",
+    "3.v0.3router路由模块/3_1.Request请求模块封装.md",
+    "3.v0.3router路由模块/3_2.Router路由模块的实现.md",
     "2.V0.2链接的封装/2_2具体方法的实现.md",
-    "查漏补缺/3.socket连接.md",
-    "查漏补缺/2.结构体与方法.md",
-    "查漏补缺/1.&的应用.md",
     "2.V0.2链接的封装/2_1链接模块的封装.md",
-    "1.V0.1_server与链接模块/1_3.服务端应用.md",
     "1.V0.1_server与链接模块/1_2.基本server模块的启动.md",
     "1.V0.1_server与链接模块/1_1.server模块开发.md",
+    "5.v0.5Message消息模块/5_2 TCP粘包问题.md",
+    "查漏补缺/3.socket连接.md",
+    "查漏补缺/6.Io.ReadFull方法.md",
+    "查漏补缺/7.大端序与小端序.md",
+    "查漏补缺/4.go_test模块.md",
+    "查漏补缺/5.断言.md",
+    "5.v0.5Message消息模块",
+    "4.v0.4全局配置",
+    "3.v0.3router路由模块/3_3.集成到框架当中.md",
+    "查漏补缺/2.结构体与方法.md",
+    "查漏补缺/1.&的应用.md",
+    "1.V0.1_server与链接模块/1_3.服务端应用.md",
     "0.项目简介/简单介绍.md",
     "3.v0.3router路由模块",
     "2.V0.2链接的封装",

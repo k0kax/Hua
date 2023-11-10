@@ -7,7 +7,7 @@ type Request struct {
 	conn hiface.IConnection
 
 	//客户端请求的数据
-	data []byte
+	msg hiface.IMessage
 }
 
 // 得到当前链接
@@ -17,5 +17,10 @@ func (r *Request) GetConnection() hiface.IConnection {
 
 // 得到请求的信息数据
 func (r *Request) GetData() []byte {
-	return r.data
+	return r.msg.GetData()
+}
+
+// 获取消息ID
+func (r *Request) GetMsgID() uint32 {
+	return r.msg.GetMsgId()
 }

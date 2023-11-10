@@ -2,7 +2,9 @@ package hnet
 
 import (
 	"Hua/hiface"
+	"errors"
 	"fmt"
+	"io"
 	"net"
 )
 
@@ -48,18 +50,38 @@ func (c *Connection) StartReader() {
 	defer c.Stop()
 
 	for {
-		//读取客户端的业务到buf中，最大512字节
-		buf := make([]byte, 512)
-		_, err := c.Conn.Read(buf) //cnt用不上了
+
+		//创建一个拆包解包的对象
+		dp := NewDataPack()
+
+		//读取客户端的Msg Head 二进制流 8 字节
+		headData := make([]byte, dp.GetHeadLen())
+		if _, err := io.ReadFull(c.GetTCPConnection(), headData); err != nil {
+			fmt.Println("read msg head error", err)
+			break
+		}
+		//拆包 得到msgId msgDataLen 放在msg消息里
+		msg, err := dp.Unpack(headData)
 		if err != nil {
-			fmt.Println("recv buf err", err)
-			continue
+			fmt.Println("unpack error", err)
+			break
 		}
 
+		//根据dataLen 再次读取Data,放在msg.Data里
+		var data []byte
+		if msg.GetMsgLen() > 0 {
+			data = make([]byte, msg.GetMsgLen())
+			if _, err := io.ReadFull(c.GetTCPConnection(), data); err != nil {
+				fmt.Println("read msg data error", err)
+				break
+			}
+		}
+
+		msg.SetData(data)
 		//得到当前conn数据的Request请求数据
 		req := Request{
 			conn: c,
-			data: buf,
+			msg:  msg,
 		}
 
 		//不匹配问题 使用
@@ -72,6 +94,30 @@ func (c *Connection) StartReader() {
 			c.Router.PostHandle(request)
 		}(&req)
 	}
+}
+
+// 连接提供一个发包的方法：将发送的信息进行打包，再发送
+func (c *Connection) SendMsg(msgId uint32, data []byte) error {
+	if c.isClosed == true {
+		return errors.New("Connection closed when Send msg")
+	}
+
+	//将data进行封包 MsgDataLen/MsgId/Data
+	dp := NewDataPack()
+
+	binaryMsg, err := dp.Pack(NewMsgPackage(msgId, data))
+	if err != nil {
+		fmt.Println("Pack error msg id=", msgId)
+		return errors.New("Pack error mag")
+	}
+
+	//将数据发送给客户端
+	if _, err := c.Conn.Write(binaryMsg); err != nil {
+		fmt.Println("Write msg id:", msgId, "error:", err)
+		return errors.New("conn Write error")
+	}
+
+	return nil
 }
 
 // 启动链接
@@ -113,9 +159,4 @@ func (c *Connection) GetConnID() uint32 {
 // 获取远程客户端的TCP状态、IP、端口
 func (c *Connection) RemoteAddr() net.Addr {
 	return c.Conn.RemoteAddr()
-}
-
-// 发送数据
-func (c *Connection) Send(data []byte) error {
-	return nil
 }
